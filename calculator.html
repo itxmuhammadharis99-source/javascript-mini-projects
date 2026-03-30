@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+     border: 1px solid grey;
+     margin: 200px 550px;
+}
+
+.mainbtn{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    padding: 1px;
+}
+
+.display{
+    background-color: aliceblue;
+    border: 2px solid black;
+    padding: 35px 15px;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: right;
+    margin: 15px 3px;
+
+}
+
+button{
+    padding: 25px;
+    margin: 8px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+button:hover{
+color: white;
+background-color: rgb(60, 60, 60);
+}
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="display" id="display">0</div>
+      <div class="mainbtn" id="mainbtn">
+         <button onclick="clearDisplay()">C</button>
+            <button onclick="deleteLast()">Del</button>
+            <button onclick="appendToDisplay('/')">/</button>
+            <button onclick="appendToDisplay('/')">%</button>
+            <button onclick="appendToDisplay('*')">*</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('+')">+</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="appendToDisplay('00')" class="zero">00</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+      </div>
+    </div>
+</body>
+
+<script src="./calculator.js">
+
+</script>
+</html>

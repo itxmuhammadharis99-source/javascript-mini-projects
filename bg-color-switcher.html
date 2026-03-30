@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <title>JavaScript Background Color Switcher</title>
+  <style>
+    body {
+      /* place-items: center; */
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      justify-self: center;
+    }
+
+    .buttons {
+      padding: 100px;
+      /* height: 200px; */
+      gap: 15px;
+
+    }
+
+    .canvas {
+      background: transparent;
+      padding: 10px 30px;
+      border-radius: 8px;
+      color: #212121;
+      text-decoration: none;
+      border: 2px solid #212121;
+    }
+
+    #grey {
+      background-Color: grey;
+
+    }
+
+    #white {
+      background-color: white;
+    }
+
+    #blue {
+      background-color: blue;
+    }
+
+    #yellow {
+      background-color: yellow;
+    }
+
+    #purple {
+      background-color: purple;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="#" aria-current="page">Home</a>
+    <a target="_blank" href="https://www.youtube.com/@chaiurcode">Youtube channel</a>
+  </nav>
+
+  <div class="canvas">
+    
+    <h1>Color Scheme Switcher</h1>
+    <button class="buttons" id="grey">Grey</button>
+    <button class="buttons" id="white">White</button>
+    <button class="buttons" id="blue">Blue</button>
+    <button class="buttons" id="yellow">Yellow</button>
+    <button class="buttons" id="purple">purple</button>
+    <h2>
+      Try clicking on one of the colors above
+      <span>to change the background color of this page!</span>
+    </h2>
+  </div>
+  <script src="./bg-color-switcher.js"></script>
+</body>
+
+</html>
